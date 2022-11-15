@@ -124,121 +124,119 @@ class _searchState extends State<search> {
     // );
   }
 
-  Widget buildPageh() => Expanded(
-          child: Container(
+  Widget buildPageh() => Container(
         child: Center(
-          child: Text("home"),
+  child: Text("home"),
+        ),
+      );
+  Widget buildPagea() => Container(
+        child: Padding(
+  padding: const EdgeInsets.symmetric(horizontal: 20),
+  child: SingleChildScrollView(
+    scrollDirection: Axis.vertical,
+    child: Column(children: [
+      SizedBox(
+        height: 10,
+      ),
+      Wrap(
+        children: [
+          element("Rent", 8, 40,true),
+          SizedBox(
+            width: 10,
+          ),
+          element("Sale", 8, 40,false),
+        ],
+      ),
+      Divider(thickness: 2.0),
+      Row(
+        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        children: [
+          element("flat", 5, 25,true),
+          element("penthouse", 5, 25,false),
+          element("Duplex", 5, 25,false),
+        ],
+      ),
+      SizedBox(
+        height: 10,
+      ),
+      element("Studio", 5, 25,false),
+      Divider(thickness: 2.0),
+      Row(
+        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        children: [
+          element("1BHk", 5, 25,true),
+          element("2BHK", 5, 25,false),
+          element("3BHK", 5, 25,false),
+        ],
+      ),
+      SizedBox(
+        height: 10,
+      ),
+      Row(
+        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        children: [
+          element("4BHK", 5, 25,false),
+          element("5BHK", 5, 25,false),
+          element("6BHK", 5, 25,false),
+        ],
+      ),
+      Divider(thickness: 2.0),
+      Row(
+        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        children: [
+          element("Unfinished", 5, 40,true),
+          element("Finished", 5, 40,false),
+        ],
+      ),
+      SizedBox(
+        height: 10,
+      ),
+      element("Semi Finished", 5, 40,false),
+      Divider(thickness: 2.0),
+      Row(
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        children: [
+          Text(
+            "price range",
+            style: TextStyle(color: Colors.blue[200]),
+          ),
+          Text(
+            "₹ 8k",
+            style: TextStyle(
+                color: Colors.blue[900], fontWeight: FontWeight.bold),
+          ),
+          Text(
+            "to",
+            style: TextStyle(color: Colors.blue[900]),
+          ),
+          Text(
+            "₹ 57k",
+            style: TextStyle(color: Colors.blue[900], fontWeight: FontWeight.bold),
+          ),
+        ],
+      ),
+      SizedBox(height: 10,),
+
+      Divider(thickness: 2.0),
+      Row(children: [
+      Expanded(
+        child: TextField(
+          decoration: InputDecoration(
+              hintText: "Location", suffixIcon: Icon(Icons.search)),
+        ),
+      ),
+    ]),
+    Row(children: [
+      Expanded(
+        child: TextField(
+          decoration: InputDecoration(
+              hintText: "Socity Type", ),
+        ),
+      ),
+    ]),
+  ]),
         ),
       ));
-  Widget buildPagea() => Expanded(
-          child: Container(
-        child: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 20),
-          child: SingleChildScrollView(
-            scrollDirection: Axis.vertical,
-            child: Column(children: [
-              SizedBox(
-                height: 10,
-              ),
-              Wrap(
-                children: [
-                  element("Rent", 8, 40,true),
-                  SizedBox(
-                    width: 10,
-                  ),
-                  element("Sale", 8, 40,false),
-                ],
-              ),
-              Divider(thickness: 2.0),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                children: [
-                  element("flat", 5, 25,true),
-                  element("penthouse", 5, 25,false),
-                  element("Duplex", 5, 25,false),
-                ],
-              ),
-              SizedBox(
-                height: 10,
-              ),
-              element("Studio", 5, 25,false),
-              Divider(thickness: 2.0),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                children: [
-                  element("1BHk", 5, 25,true),
-                  element("2BHK", 5, 25,false),
-                  element("3BHK", 5, 25,false),
-                ],
-              ),
-              SizedBox(
-                height: 10,
-              ),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                children: [
-                  element("4BHK", 5, 25,false),
-                  element("5BHK", 5, 25,false),
-                  element("6BHK", 5, 25,false),
-                ],
-              ),
-              Divider(thickness: 2.0),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                children: [
-                  element("Unfinished", 5, 40,true),
-                  element("Finished", 5, 40,false),
-                ],
-              ),
-              SizedBox(
-                height: 10,
-              ),
-              element("Semi Finished", 5, 40,false),
-              Divider(thickness: 2.0),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  Text(
-                    "price range",
-                    style: TextStyle(color: Colors.blue[200]),
-                  ),
-                  Text(
-                    "₹ 8k",
-                    style: TextStyle(
-                        color: Colors.blue[900], fontWeight: FontWeight.bold),
-                  ),
-                  Text(
-                    "to",
-                    style: TextStyle(color: Colors.blue[900]),
-                  ),
-                  Text(
-                    "₹ 57k",
-                    style: TextStyle(color: Colors.blue[900], fontWeight: FontWeight.bold),
-                  ),
-                ],
-              ),
-              SizedBox(height: 10,),
-
-              Divider(thickness: 2.0),
-              Row(children: [
-              Expanded(
-                child: TextField(
-                  decoration: InputDecoration(
-                      hintText: "Location", suffixIcon: Icon(Icons.search)),
-                ),
-              ),
-            ]),
-            Row(children: [
-              Expanded(
-                child: TextField(
-                  decoration: InputDecoration(
-                      hintText: "Socity Type", ),
-                ),
-              ),
-            ]),
-          ]),
-        ),
-      )));
 
   Widget buildPagel() => Expanded(
           child: Container(

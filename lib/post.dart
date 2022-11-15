@@ -72,24 +72,24 @@ class post extends StatelessWidget {
     
   }
 }
-  Widget buildPageh( )=> Expanded(child: Container(
+  Widget buildPageh( )=> Container(
     child: Center(
       child: Text("home"),
     ),
-  ));
-  Widget buildPagea( )=> Expanded(child: apartmentElements());
+  );
+  Widget buildPagea( )=> apartmentElements();
 
   
   
-  Widget buildPagel( )=> Expanded(child: Container(
+  Widget buildPagel( )=> Container(
     child: Center(
       child: Text("aprtment"),
     ),
-  ));
-  Widget buildPagec( )=> Expanded(child: Container(
+  );
+  Widget buildPagec( )=> Container(
     child: Center(
       child: Text("aprtment"),
     ),
-  ));
+  );
 
 

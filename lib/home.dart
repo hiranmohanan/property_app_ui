@@ -87,175 +87,174 @@ class home extends StatelessWidget {
             ),
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 5),
-              child: Expanded(
-                  child: Container(
+              child: Container(
                 height: 40.h,
                 width: 90.w,
                 decoration: const BoxDecoration(
-                    borderRadius: BorderRadius.all(Radius.circular(20)),
-                    color: Colors.white),
+                borderRadius: BorderRadius.all(Radius.circular(20)),
+                color: Colors.white),
                 child: Column(
-                  mainAxisAlignment: MainAxisAlignment.center,
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                const Text(
+                  "Dashboard",
+                  style: TextStyle(
+                      color: Color(0xFF3989a4),
+                      fontSize: 30,
+                      fontWeight: FontWeight.w400),
+                ),
+                SizedBox(
+                  height: 6.h,
+                ),
+                Column(
                   children: [
-                    const Text(
-                      "Dashboard",
-                      style: TextStyle(
-                          color: Color(0xFF3989a4),
-                          fontSize: 30,
-                          fontWeight: FontWeight.w400),
-                    ),
-                    SizedBox(
-                      height: 6.h,
-                    ),
-                    Column(
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                       children: [
-                        Row(
-                          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                          children: [
-                            TextButton(
-                              onPressed: null,
-                              child: Column(
-                                children: const [
-                                  Icon(
-                                    Icons.house_siding_sharp,
-                                    color: Color(0xFF3989a4),
-                                    size: 40,
-                                  ),
-                                  Text(
-                                    "Companies",
-                                    style: TextStyle(color: Color(0xFF3989a4)),
-                                  ),
-                                  Text(
-                                    "42",
-                                    style: TextStyle(
-                                        color: Color(0xFF3989a4),
-                                        fontWeight: FontWeight.w600),
-                                  ),
-                                ],
+                        TextButton(
+                          onPressed: null,
+                          child: Column(
+                            children: const [
+                              Icon(
+                                Icons.house_siding_sharp,
+                                color: Color(0xFF3989a4),
+                                size: 40,
                               ),
-                            ),
-                            TextButton(
-                              onPressed: null,
-                              child: Column(
-                                children: const [
-                                  Icon(
-                                    Icons.people_outline,
-                                    color: Color(0xFF3989a4),
-                                    size: 40,
-                                  ),
-                                  Text(
-                                    "Agents",
-                                    style: TextStyle(color: Color(0xFF3989a4)),
-                                  ),
-                                  Text(
-                                    "45",
-                                    style: TextStyle(
-                                        color: Color(0xFF3989a4),
-                                        fontWeight: FontWeight.w600),
-                                  ),
-                                ],
+                              Text(
+                                "Companies",
+                                style: TextStyle(color: Color(0xFF3989a4)),
                               ),
-                            ),
-                            TextButton(
-                              onPressed: null,
-                              child: Column(
-                                children: const [
-                                  Icon(
-                                    Icons.villa_outlined,
+                              Text(
+                                "42",
+                                style: TextStyle(
                                     color: Color(0xFF3989a4),
-                                    size: 40,
-                                  ),
-                                  Text(
-                                    "Apartment",
-                                    style: TextStyle(color: Color(0xFF3989a4)),
-                                  ),
-                                  Text(
-                                    "1357",
-                                    style: TextStyle(
-                                        color: Color(0xFF3989a4),
-                                        fontWeight: FontWeight.w600),
-                                  ),
-                                ],
+                                    fontWeight: FontWeight.w600),
                               ),
-                            ),
-                          ],
+                            ],
+                          ),
                         ),
-                        Row(
-                          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                          children: [
-                            TextButton(
-                              onPressed: null,
-                              child: Column(
-                                children: const [
-                                  Icon(
-                                    Icons.home_work_outlined,
-                                    color: Color(0xFF3989a4),
-                                    size: 40,
-                                  ),
-                                  Text(
-                                    "houses",
-                                    style: TextStyle(color: Color(0xFF3989a4)),
-                                  ),
-                                  Text(
-                                    "326",
-                                    style: TextStyle(
-                                        color: Color(0xFF3989a4),
-                                        fontWeight: FontWeight.w600),
-                                  ),
-                                ],
+                        TextButton(
+                          onPressed: null,
+                          child: Column(
+                            children: const [
+                              Icon(
+                                Icons.people_outline,
+                                color: Color(0xFF3989a4),
+                                size: 40,
                               ),
-                            ),
-                            TextButton(
-                              onPressed: null,
-                              child: Column(
-                                children: const [
-                                  Icon(
-                                    Icons.landscape_outlined,
-                                    color: Color(0xFF3989a4),
-                                    size: 40,
-                                  ),
-                                  Text(
-                                    "Agents",
-                                    style: TextStyle(color: Color(0xFF3989a4)),
-                                  ),
-                                  Text(
-                                    "124",
-                                    style: TextStyle(
-                                        color: Color(0xFF3989a4),
-                                        fontWeight: FontWeight.w600),
-                                  ),
-                                ],
+                              Text(
+                                "Agents",
+                                style: TextStyle(color: Color(0xFF3989a4)),
                               ),
-                            ),
-                            TextButton(
-                              onPressed: null,
-                              child: Column(
-                                children: const [
-                                  Icon(
-                                    Icons.location_city_outlined,
+                              Text(
+                                "45",
+                                style: TextStyle(
                                     color: Color(0xFF3989a4),
-                                    size: 40,
-                                  ),
-                                  Text(
-                                    "offices",
-                                    style: TextStyle(color: Color(0xFF3989a4)),
-                                  ),
-                                  Text(
-                                    "222",
-                                    style: TextStyle(
-                                        color: Color(0xFF3989a4),
-                                        fontWeight: FontWeight.w600),
-                                  ),
-                                ],
+                                    fontWeight: FontWeight.w600),
                               ),
-                            ),
-                          ],
-                        )
+                            ],
+                          ),
+                        ),
+                        TextButton(
+                          onPressed: null,
+                          child: Column(
+                            children: const [
+                              Icon(
+                                Icons.villa_outlined,
+                                color: Color(0xFF3989a4),
+                                size: 40,
+                              ),
+                              Text(
+                                "Apartment",
+                                style: TextStyle(color: Color(0xFF3989a4)),
+                              ),
+                              Text(
+                                "1357",
+                                style: TextStyle(
+                                    color: Color(0xFF3989a4),
+                                    fontWeight: FontWeight.w600),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ],
+                    ),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                      children: [
+                        TextButton(
+                          onPressed: null,
+                          child: Column(
+                            children: const [
+                              Icon(
+                                Icons.home_work_outlined,
+                                color: Color(0xFF3989a4),
+                                size: 40,
+                              ),
+                              Text(
+                                "houses",
+                                style: TextStyle(color: Color(0xFF3989a4)),
+                              ),
+                              Text(
+                                "326",
+                                style: TextStyle(
+                                    color: Color(0xFF3989a4),
+                                    fontWeight: FontWeight.w600),
+                              ),
+                            ],
+                          ),
+                        ),
+                        TextButton(
+                          onPressed: null,
+                          child: Column(
+                            children: const [
+                              Icon(
+                                Icons.landscape_outlined,
+                                color: Color(0xFF3989a4),
+                                size: 40,
+                              ),
+                              Text(
+                                "Agents",
+                                style: TextStyle(color: Color(0xFF3989a4)),
+                              ),
+                              Text(
+                                "124",
+                                style: TextStyle(
+                                    color: Color(0xFF3989a4),
+                                    fontWeight: FontWeight.w600),
+                              ),
+                            ],
+                          ),
+                        ),
+                        TextButton(
+                          onPressed: null,
+                          child: Column(
+                            children: const [
+                              Icon(
+                                Icons.location_city_outlined,
+                                color: Color(0xFF3989a4),
+                                size: 40,
+                              ),
+                              Text(
+                                "offices",
+                                style: TextStyle(color: Color(0xFF3989a4)),
+                              ),
+                              Text(
+                                "222",
+                                style: TextStyle(
+                                    color: Color(0xFF3989a4),
+                                    fontWeight: FontWeight.w600),
+                              ),
+                            ],
+                          ),
+                        ),
                       ],
                     )
                   ],
+                )
+              ],
                 ),
-              )),
+              ),
             ),
             Padding(
               padding: const EdgeInsets.symmetric(vertical: 12),
